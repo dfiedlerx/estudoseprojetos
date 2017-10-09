@@ -15,4 +15,25 @@ USos do JWT:
  - Autenticação: Esses é o cenário mais comum para uso do JWT. Uma vez que o usuário esteja logado, cada requisição
  subsequente irá incluir o JWT, permitindo que o usuário acesse routas, serviços e recursos que sejam permitidos por
  aquele token. Single Sign On é um característica que utiliza amplamente JWT hoje em dia, por causa de sua pequena
- sobrecarga e sua habilidade de ser facilmente usada em diferente domínios.
+ sobrecarga e sua habilidade de ser facilmente usada em diferentes domínios.
+
+ - Intercâmbio de Informações: JSON Web Tokens são um bom caminho para tranmissões seguras de informações entre partes.
+   Por causa que JWTs podem ser assinadas - por exemplo, usando pares de chaves publicas/privadas - voce pode ter
+   certeza de que os remetentes são quem eles dizem que são. Além disso, como a assinatura é calculada usando o
+   cabeçalho e a carga util, voce também pode verificar se o conteúdo não foi adulterado.
+
+Estrutura do JWT:
+
+JSON Web Tokens consistem em três partes separadas por pontos (.) sendo eles:
+ - Header (Cabeçalho)
+ -Payload
+ -Signature
+
+Assim sendo, uma JWT tipicamente se parece com o seguinte:
+ xxxxx.yyyyy.zzzzz
+
+Vamos dividir-lo em diferentes partes.
+
+ Header
+  O header tipicamente consiste em duas partes: o tipo do token que é JWT e o algoritmo de hashing podendo ser
+  HMAC SHA256 ou RSA
