@@ -1,0 +1,52 @@
+-- Autenticação em APIs Rest com PHP --
+
+
+Métodos de Autenticação
+ - Basic: É a abordagem mais simples para proteger qualquer página ou recurso na web. Esta tecnologia está disponível em
+   qualquer navegador ou servidor web.
+
+   A autenticação é feita enviando usuário e senha pelo header HTTp Authorization. O envio das credenciais não são
+   criptgrofados. Portanto tenha cuidado ao utilizar este método. Garanta que esteja usando SSL no seu site.
+
+   A grande  vantagem deste método é que por ser simples é bem mais veloz do que as outras opções.
+
+
+ - Digest: A autenticação Digest é um pouco mais complexxa que a Basic. A principal diferença é que os dados trafegados
+   com DIgest são protegidos por criptografia enquanto o Basic utiliza apenas texto puro codificado com Base64.
+
+   Caso não seja possível usar HTTPS em sua API, Digest é uma opção mais segura que Basic.
+
+   No caso de estar trabalhando com SSL, a autenticação Basic se torna uma melhor opção. A Digest é vulnerável a ataques
+   main-in-the-middle enquanto Basic não.
+
+ - OAuth2: OAuth2 é um framework de autorização que permite aplicações de terceiros obterem acesso limitado à contas dos
+   usuários atrave´s de serviços HTTp. Normalmente são APIs REST. Muitas plataformas conhecidas utilizam esse esquema de
+   autenticação, por exemplo Facebook, GitHub, Google, etc.
+
+ - JWT: Json Web Token (JWT) é uma forma elegante e segura de tratar autenticação em API. JWT não é um simples token
+   gerado a partir de dados randômicos. JWT contém informações e metadados que descrevem a entidade do usuário, dados de
+   autorização, validade do token, domínio válido, etc.
+
+   Funciona de forma stateless, ou seja, sem manter estado no lado do servidor. Dados podem ser inspecionados, é
+   compatível com OAuth2, possui controles de expiração, segurança e possuui implementações em diferentes linguagens de
+   programação.
+
+   Devido a sua gama de vantagens e popularidade, escolhi o JWT para fazer uma demostração de autenticação em APIs REST
+   usando o micro-framework Silex, como veremos adiante.
+
+
+
+-- JSON Web Token - JWT --
+
+Como citei anteriormente vamos demonstrar um mecanismo de autenticação em API usando JWT. Utilizarei a biblioteca
+php-jwt do firebase disponível em https://github.com/firebase/php-jwt que irá auxiliar nossa implementação.
+
+O foco deste artigo é mais prático, mostrando a implementação da autenticação com JWT. Caso queira se aprofundar na
+anatomia do JWT sugiro ler o exclente artigo The Anatomy of a JSON Web Token.
+
+
+-- Preparando o Ambiente
+
+Realize os procedimentos abaixo dentro do diretório raiz da aplicação.
+Vamos usar o composer para instalar o silex e o php-jwt. Baixe a úlltima versão do composer através do link:
+http://getcomposer.org/composer.phar

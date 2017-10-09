@@ -1,0 +1,26 @@
+{
+  "require": {
+    "php": ">=5.5.0",
+    "slim/slim": "^3.1",
+    "filp/whoops": "^2.1",
+    "vlucas/phpdotenv": "^2.3",
+    "lcobucci/jwt": "^3.1",
+    "aws/aws-sdk-php": "^3.18",
+    "league/flysystem": "^1.0",
+    "league/flysystem-aws-s3-v3": "^1.0",
+    "monolog/monolog": "^1.21",
+    "league/pipeline": "^0.3.0"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php -r \"if (!file_exists('.env') && file_exists('.env.example')) copy('.env.example', '.env');\""
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\Middleware\\": "src/middlewares",
+      "App\\Route\\": "src/routes",
+      "App\\Util\\": "src/util"
+    }
+  }
+}
