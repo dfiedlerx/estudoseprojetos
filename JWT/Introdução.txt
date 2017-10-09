@@ -36,4 +36,48 @@ Vamos dividir-lo em diferentes partes.
 
  Header
   O header tipicamente consiste em duas partes: o tipo do token que é JWT e o algoritmo de hashing podendo ser
-  HMAC SHA256 ou RSA
+  HMAC SHA256 ou RSA.
+
+ Payload
+  A segunda parte do token é o payload que contem as reinvidicações. Reinvidicações são aformações spbre uma entidade
+  (tipicamente o usuário) e metadata adicional. Estes são os três tipos de reinvidicações: reservada, public e privada.
+
+   - Reinvidicações Reservadas: Estes são um conjunto de reinvidicações predefinidas que não são obrigatórias, mas
+     recomendadas para fornecer um conjunto de usáveis e interoperáveis reinvidicações. Algumas delas são:
+      * iss(emissor), exp (Tempo de expiração), sub (assunto), aud (audiência), dentre outros.
+   - Reinvidicações Publicas: Estas podem ser definidas a vontade para aqueles que usar JWTs. Porém para evitar colisões,
+     elas devem ser definidas no registro do IANA jSON Web ou definida como URI que tenha um namespace resistente à
+     colisão.
+   -  Reinvidicações Privadas: Estas são as reinvidicações customizadas criadas para compartilhar informação entre
+      partes que aceitem mutualmente o uso.
+
+ Assinatura
+  Para criar a parte de assinatura, voce deve obter  o header e o payload criptografados, uma chave secreta, um
+  algoritmo especificado na header e a partir desses dados criar a assinatura.
+  A assinatura e usada para verificar se o remetente do JWT é quem diz que é e se por acaso a mensagem foi ou não
+  alterada ao longo do caminho.
+
+
+Juntando Tudo
+ A saida são três strings Base64 separadas por pontos e que podem facilmente ser passadas nos ambientes HTML e HTTP.
+ Enquanto é mais compacto quando comparado aos padrões baseados em XML como o SAML.
+ Se voce procuta utilizar JWT e colocar os seus conceitos em pratica, voce pode usar jwt.io Debugger para decodificar,
+ verificar e gerar JWTs.
+
+
+Como funciona o JSON Web Tokens?
+ Na autenticação, quando um usuário logar com sucesso usando suas credenciais, um JSON Web Token é retornado e será salvo
+ localmente (tipicalmente no disco local, porém cookies também podem ser usados), em vez da tradicional abordagem de
+ criar uma sessão no servidor e retornar um cookie.
+
+ Sempre que o usuário quiser acessar uma rota ou recurso protegido, o agente do usuário envia a JWT, geralmente no header
+ de autorizaçã usando the BEares shema.
+
+ Esse é um mecanismo de autenticação sem estado sendo que o estado do usuário nunca é salvo na memória do sistema. As
+ rotas protegidas dos servidores irão checkar se o JWT é valido no header de Autorização, e se for verdade, o usuário
+ estará permitido para acessar os recursos protegidos. COmo as JWTs são autônomas, todas as informações necessárias
+ estão la, reduzindo a necessidade de múltiplas consultas ao banco de dados.
+
+ Isso permite que voce possa confiar plenamente nos dados das APIs e que possa fazer requisiçõas para outros serviços.
+ Não importa quais domínios consomem sua API, já que , Cross-Origin Resource (CORS) não será um problema pois não usa
+ cookies.
