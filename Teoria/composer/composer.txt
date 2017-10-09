@@ -1,0 +1,23 @@
+Composer é um framework de controle de dependências amplamente utilizado no desenvolvimento de aplicaçõs PHP. Ele verifica em um arquivo pre-configurado quais dependências são necessárias e automaticamente baixa e gera um autoload para elas deixando-as prontas para o uso.
+
+Para instalar o composer basta no pompt dar CD ate a pasta do projeto e em seguida, criar um arquiva chamado composer.json.
+
+No arquivo criado, deve-se inserir as dependências desejadas em forma de JSON:
+Ex:
+ {
+
+   "require":
+   {
+
+     "monolog/monolog": "^1.21",
+   
+   } 
+
+ }
+
+Após isso é so executar o comando "composer install";
+
+
+Para atualizar um dependencia já instalada, basta apenas executar "composer update"
+
+Após isso, basta no arquivo principal do sistema e dar require no arquivo autoload.php da pasta vendor que foi gerada automaticamente.

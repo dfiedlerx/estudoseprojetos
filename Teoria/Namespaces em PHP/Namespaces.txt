@@ -1,0 +1,4 @@
+O namespace foi criado com o intuito de evitar colisão de classes com mesmo nome. O conceito de namespace também evita nomes de classes grandes ou "criativos" demais.
+
+O namespace deve ser declarado primeiro e são chamados através do termo "declare". Ex: namespace Projeto;
+

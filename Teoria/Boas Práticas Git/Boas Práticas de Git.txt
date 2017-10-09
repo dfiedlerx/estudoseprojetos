@@ -1,0 +1,19 @@
+No fluxo de desenvolvimento:
+ - Criar um novo branch para o repositório local.
+ - Implementar as mudanças.
+ - Fazer um push do seu branch para o repositório remoto.
+ - Submeter um Pull Request;
+ - Aguarde a revisão de outros contribuintes (caso necessário)
+ - Caso alguma das mudanças for requisitada, fazer impletanção.
+
+No código:
+ - Escrever no case da linguagem.
+ - Escrever no "idioma" da linguagem e de forma natutal.
+ - Códigos em inglês preferencialmente.
+
+Controle de versão:
+ - Mensagens de commit devem ser curtas e objetivas. Exemplos:
+   * "Fix bug at user controller"
+   * "Add sign in feature"
+ - Commits devem possuir poucas mudanças em geral.
+ - Colocar no commit a referência sobre qual inssue ele corrige.

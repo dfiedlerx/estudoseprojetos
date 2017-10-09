@@ -1,0 +1,165 @@
+PSR � um conjunto de normas n�o nativas que auxiliam e padronizam a codifica��o em PHP. Seu intuito � ajudar na organiza��o, portabilidade, manuten��o, cria��o e compartilhamento de codigos PHP. As regras PSR s�o mantidas pela framework fundation que comporta diversos das principais equipes de frameworks do mercado como o t�o famoso "Zend".
+
+Vis�o Geral:
+ - O c�digo deve seguir o guia de estilo de codifica��o [PSR-1]
+ - O c�digo deve usar 4 espa��s para identa��o, n�o h� uso de tabs.
+ - N�o se deve haver um limite muito extenso da largura de linhas. O limite deve 
+   ser de no m�ximo 80 caracteres.
+ - Deve-se haver uma linha em branco depois de uma declara��o "namespace", e deve-se haver tamb�m uma linha em branco ap�s declara��es "use".
+ - Aberturas de chaves para classes devem ser inseridas na linha seguinta � da declara��o. Deve-se tamb�m haver uma linha em branco ap�s estas chaves.
+
+ - Aberturas de chaves para m�todos devem ser inseridas na pr�xima linha e os fechamentos de chaves devem ser inseridos uma linha ap�s o fim do c�digo do m�todo.
+ -  Visibilidade deve ser delcarada em todas as propriedades e m�todos; "abstract" e "final" devem ser declarados antes da visibilidade; "static" deve ser declarado ap�s a visibilidade.
+ -  Estruturas de controle de palavras-chave devem haver um espa�o ap�s seu fim. Em contrapartida, m�tods e chamadas de fun��o n�o devem.
+ - Aberturas de  chaves para estruturas de controle dever ser feitas na mesma linha e os fechamentos de chaves devem ser inseridos ap�s seu corpo.
+ - Aberturas de parenteses para estruturas de controle n�o devem haver espa�o ap�s si mesma. O fechamento de par�ntes para estruturas de controle n�o devem haver espa�o ap�s seu corpo.
+
+
+2.1 - Padr�o basico de codifica��o
+ O c�digo deve seguir todas as regras descritas em PSR-1.
+
+
+2.2 Arquivos
+ - Todos os arquivos PGP devem usar o tipo de finaliza��o de linha Unix LF (linefeed)
+ - Todos os arquivos PHP devem terminar ap�s uma dimples linha em branco.
+ - A tag de fechamento "?>" deve ser imitida em arquivos que contenham apenas c�digo PHP.
+
+
+2.3 Linhas
+ - As linhas n�o devem haver comprimento exagerado.
+ - O limite simples para o comprimento de uma linha n�o deve ultrapassar 120 caracteres. Os verificadores de estilo automatizados devem ultrapassar esse limit.
+ - Linhas n�o deveriam ser mais longas que 80 caracteres. Linhas mais longas devem ser dividas em multiplas linhas subsequentes com no m�ximo 80 caracteres.
+ - N�o se deve haver linhas em branco ap�s linhas que tamb�m estejam em branco.
+ - Linhas em branco podem ser adicionadas para melhor legibilidades e para indicar blocos relacionados de c�digo.
+ - N�o deve-se haver mais que uma declara��o por linha.
+
+
+2.4 Identa��o
+ - O c�digo deve usar uma identa��o de 4 espa�os, e n�o deve fazer uso de tabs para esse fim.
+
+N.b.: Usando apenas espa�os, e n�o misturando o uso com tabs, ajuda a evitar problemas com diffs, patches, historicos e anota��es. O uso de espa�os tamb�m torna f�cil a inser��o de sub-identa��o para alinhameto de linhas internas.
+
+
+2.5 Palavras-chave e True/False/Null
+ - Palavras-chave `do PHP devem ser apenas com letras min�sculas.
+ - As contantes do PHP true, false e null devem ser usadas com letras min�sculas.
+
+
+3 Namespace e declara��es "use"
+ - Quando presente, deve-se colocar uma linha em branco ap�s uma declara��o "namespace"
+ - Quando presente, todas as declara��es "use" dever estar ap�s as declara��es "namespace".
+ - Deve-se usar uma palavra chave por declara��o "use"
+ - Deve-se usar uma linha em branco ap�s um bloco de declara��o de "use"
+
+
+3.5 Classes, Propriedades e M�todos
+ - O termo "class" refere a todas as classes, interfaces e traits.
+
+
+4.1 - Exttends e Implements
+ - As palavras-chave "Extends" e "implements" devem ser declaradas na mesma linha ao nome da classe.
+ - O abrimento de chaves para classes devem ser inserido ap�s a declara��o dela; O fechamento de chaves para classes devem ser inseridas ap�s o corpo do classe.
+
+Lista de "implements" podem ser divididas em multiplas linhas, cada uma dessas linhas � identada apenas uma vez. Ao faz�-lo, o primeiro item na lista deve estar na pr�xima linhas e deve-se haver apenas uma interface por linha.
+
+
+4.2 Propriedades
+ - Vosibilidade deve ser declarada em todas as propriedades.
+ - A palavra-chave "var" n�o deve ser usada para declarar uma propriedade.
+ - Nomes de propriedades n�o deveria ser prefixados com um indicador de visibilidade protegida ou privada.
+
+
+4.3 M�todos
+ - Visibilidades devem ser declaras em todos os m�todos.
+ - Nomes de m�todos n�o deveriam ser prefixados por um indicador de visibilidade protegida ou privada.
+ - Nomes de m�todos n�o devem ser declarados com um espa�o ap�s si mesmos. A abertura de chaves deve ser inseridas na mesma linha, e o fechamento de chaves deve ser inserido ap�s o corpo do m�todo. N�o se deve haver espa�os ap�s a abertuda de par�nteses e n�o deve-se tamb�m haver espa�os ap�s o fechamento de par�nteses.
+
+
+4.4 Argumentos de m�todos
+ - Em uma lista de argumentos,  N�o deve-se colocar um espa�o antes de cada v�rgula, e deve-se haver um espa�o ap�s cada v�rgula.
+ - Argumentos de m�todos com valores pr�definidos devem ser inseridos no final da lista de argumentos.
+
+Lista de argumentos podem se dividas em m�ltiplas linhas, onde cada linha ser� identada uma vez. Quando isso for feito, o primeiro item da lista deve ser colocado na pr�xima linha e al�m disso, deve-se haver apenas um argumento por linha.
+
+Quando a lista de argumentos � dividida em m�ltiplas linhas, o fechamento de par�nteses e a abertura de chaves devem ser colocaras depois destas linhas com um espa�o ente elas.
+
+
+4.5 Abstract, final e static
+
+ - Quando houver a declara��o os termos, "abastract" e "final", deve-se haver a preced�ncia da declara��o de visibilidade.
+ - Quando houver a declara��o "static", deve-se ser feita ap�s a declara��o de visibilidade.
+
+
+4.6 MEtodos e chamadas de fun��o
+Quando um m�todo estiver sendo feito ou uma fun��o estiver sendo chamada, n�o deve-se haver um espa�o ap�s o m�todo ou nome de fun��o e tamb�m n�o deve-se haver espa�o ap�s abertira de par�ntes. N�o deve-se haver um espa�o ap�s o fechamento de par�ntes. Na lista de argumentos, n�o se deve colocar um espa�o ap�s cada v�rgula , deve-se colocar um espa�o ap�s cada comma.
+
+A lista de argumentos pode ser dividade em m�ltiplas linhas, onde cada linha subsequente � identada apenas uma vez. QUando isso for feito, o primeiro item da lista deve ser inserido na pr�xima linha e al�m disso, deve-se haver apenas um argumento por linha.
+
+
+4.7 O regras de estilo gerais para estruturas de controle s�o as seguintes:
+ - Deve-se inserir um espa�o ap�s uma palavra-chave de estrutura de controles.
+ - N�o se deve inserir um espa�o ap�s uma abertura de par�nteses.
+ - N�o se deve inserir um espa�o ap�s o fechamento de par�nteses.
+ - Deve-se colocar um espa�o ap�s o feechamento de par�nteses e a abertura de uma chave.
+ - A corpo de uma estrutura deve ser identado apenas uma vez.
+ - O fechamento de chaves deve ser insertido na pr�xima linha ap�s o corpo.
+
+O corpo de cada estrutura deve ser fechado por chaves. Isso padroniza a apar�ncia das estruturas e reduz a probabilidade de apresentar erros � medida que novas linha v�o sendo adicionadas.
+
+
+
+5.1 If, else if e else
+
+ - "else if" e "else" deve ser instanciado ap�s o fechamento de chaves da estrutura anterior.
+
+
+
+5.2 switch, case
+
+Uma estrutura "switch" deve possuir seus cases separados e identados em blocos al�m disso, cada case deve ser inserido uma linha ap�s o case anterior.
+
+
+5.3 while, do while
+A estrutura while se assemelha a da confec��o de m�todos.
+
+
+5.4 For
+A estrutura for possui um visual em que os par�ntes possuem uso de um espa�o em ambos os lados. Al�m disso, as declara��es de vari�veis e os termos da condicional devem ser separadas por um espa�o.
+
+
+5.5 foreach
+A estrutura foreach tem apar�ncia em que os par�ntes possuem um espa�o na abertura e fechamento e al�m disso, todos os termos internos s�o separados por um espa�o.
+
+5.6 try, catch
+A apar�ncia de um bloco "try catch" deve ser o seguinte:
+ - Entre o termo "Try" e a abertura de chaves, h� um espa�o.
+ - o bloco "catch" � inserido ap�s o fechamento de chaves da estrutura anterior separado por um espa�amento.
+ - OS par�nteses possuem espa�amento tanto na abertura, quanto no fechamento.
+
+
+5.7 Closures
+ - Closures devem ser declaradas usando-se de um espa�o ap�s a palavra-chave "function" e deve haver um espa�o por a palavra chave "use".
+ - As aberturas de chave devem ser inseridas na mesma linha enquanto que os fechamentos devem ser insertidos uma linha ap�s o fim do corpo.
+ - N�o sedeve colocar um espa�o ap�s a abertura de par�ntes de uma lista de argumentos ou vari�veis, e, alem disso, n�o se deve colocar um espa�o antes do fechamento de par�ntes para a lista de argumentos ou lista de vari�veis.
+ - Em uma lista de argumentos e lista de vari�veis. n�o se deve colocar um espa�o antes de cada v�rgula, e deve-se colocar um espa�o ap�s cada v�rgula.
+ - Argumentos de Closure com valores padr�es devem ser inseridos no fim da lista de argumentos.
+
+Listas de argumentos e lista de vari�veis podem ser dividades em m�ltiplas linhas, onde cada linha subsequent � identada uma vez. Quando issor feito, o primeiro item da lista deve estar na pr�xima linha, alem disso, deve-se haver apenas um argumento ou variavel por linha.
+
+Quando � um fim de uma lista que fi dividida (tanto lista de argumentos como lista de vari�veis), o fechamento de par�nteses e o abrimento de chaves devem ser colcoados na mesma linha com um espa�o entre eles.
+
+Note que essas regras de formata��o s�o apenas aplicadas quando a closure � usada diretamente em uma fun��o ou chamada de método como argumento.
+
+
+5.8 Conclus�o
+
+Existem muitos elementos de estilo e pr�ticas que foram intensionalmente omitidas nesse guia. Os item seguintes est�o incluidos nisto mas n�o s�o necessariamente limitados a isso.
+
+ - Declara��o de vari�veis globais e contantes globais.
+ - Declara��o de fun��es
+ - Operadores e atribui��es
+ - Alinhamento entre linhas
+ - Coment�rios e blocos de documenta��o
+ - Prefixos de nome de classes e sufixos
+ - Melhores Pr�ticas
+Recomenda��es futuras podem revisar e extender este guia para abordar esses ou outros elementos de estilo e pr�tica.
