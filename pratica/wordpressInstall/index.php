@@ -6,8 +6,8 @@
  * Time: 16:02
  */
 
-echo 'Hello WOrld';
+echo 'Hello World';
 
 
 
-//Tem que aparecer a pasta wordpress.
+//Tem que aparecer a pasta wordpressInstall.
