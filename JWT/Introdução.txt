@@ -1,0 +1,18 @@
+O modelo API vêm sendo usado recentemente usado diversas em aplicações. Isso ocorreu porque atualmente aplicações não podem apenas
+contar com seus próprios dados. Para que um projeto possa atingir ser total potencial, ele deve ser capaz de lidar com
+apicações de terceitos e além disso, ter seus dados facilmente acessíveis para desenvolvedores.
+
+Pense em como Facebook provém uma api para fornecer seu dados (desde que voce seja autenticado, é claro). Facebook
+também permite que aplicações de terceiros e outros serviços possam acessar esses dados. Isso é feito através de uma
+API.
+
+Agora quando nós falamos sobre fazer nossa próprias APIS, sempre chegaremos ao topico de como podemos proteger nossas
+próprias APIs.
+
+
+USos do JWT:
+
+ - Autenticação: Esses é o cenário mais comum para uso do JWT. Uma vez que o usuário esteja logado, cada requisição
+ subsequente irá incluir o JWT, permitindo que o usuário acesse routas, serviços e recursos que sejam permitidos por
+ aquele token. Single Sign On é um característica que utiliza amplamente JWT hoje em dia, por causa de sua pequena
+ sobrecarga e sua habilidade de ser facilmente usada em diferente domínios.
