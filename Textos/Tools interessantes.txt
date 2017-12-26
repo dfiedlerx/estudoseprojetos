@@ -1,0 +1,46 @@
+** SLIDES **
+
+	Full screen vertical slide
+	https://codepen.io/bassta/pen/kDvmC
+
+	Slide Com transição de saída
+	https://codepen.io/AMKohn/pen/EKJHf
+
+	Map
+	https://codepen.io/yafraorg/pen/jBEky
+
+	Slide Redondo Espelho
+	https://codepen.io/youfoundron/pen/qOeQao
+
+	Click Trasition Full Screen Slide
+	https://codepen.io/nathantaylor/pen/ZLRLvZ
+
+	Full Screen Only CSS Slide 
+	https://codepen.io/davidicus/pen/pvObpV
+
+	Blend Mode Slider
+	https://codepen.io/nolakat/pen/LWdxEr
+
+	Barra de slide com clicagem e alteração pela lateral
+	https://codepen.io/acronamy/pen/NPxbQR
+
+	Slide Full Screen com texto e transição lateral (MUUUITO LEGAL)
+	https://codepen.io/suez/pen/ByvKXE
+
+	Slide Full Screen com transição lateral. (Poaaui opacidade)
+	https://codepen.io/mrspok407/pen/bwLwvL?limit=all&page=5&q=slide
+
+	Botões com slide
+	https://codepen.io/jahdaic/pen/IJHrh
+
+	SLide sendo montado da lateral e com ampliação ao colocar o mouse por cima
+	https://codepen.io/mrspok407/full/GjWZzz/
+
+	Double Face Full Screen Slide
+	https://codepen.io/shshaw/full/akXzzE/
+
+	Slide Full Screen de Transição lateral como filme antigo
+	https://codepen.io/MAW/full/XmozON/
+
+	Full Screen Slide CLick
+	https://codepen.io/suez/full/grJONP/

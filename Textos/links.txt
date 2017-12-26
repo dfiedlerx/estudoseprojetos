@@ -1,0 +1,16 @@
+So com MatriculaUsuario
+http://localhost:8000/android/auditoria/busca.php?contratante=246000&matriculaUsuario=246512&limit=10&offset=0
+
+Loja
+http://localhost:8000/android/auditoria/busca.php?contratante=246000&matriculaUsuario=246512&limit=10&offset=0&matriculaLoja=246544
+
+Atendimento
+http://localhost:8000/android/auditoria/busca.php?contratante=246000&matriculaUsuario=246512&limit=10&offset=0&matriculaLoja=246544
+
+Formularios
+http://localhost:8000/android/auditoria/busca.php?contratante=246000&matriculaUsuario=246512&limit=10&offset=0&matriculaLoja=246544&idAtendimento=11756
+
+Registros
+http://localhost:8000/android/auditoria/busca.php?contratante=246000&matriculaUsuario=246512&limit=10&offset=0&matriculaLoja=246544&idAtendimento=11756&idFormulario=1026
+
+https://www.wpoven.com/blog/hhvm-vs-php-7-performance-showdown-wordpress-nginx/

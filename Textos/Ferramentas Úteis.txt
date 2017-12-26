@@ -1,0 +1,22 @@
+* Geração de Gráficos 
+ Highcharts
+ 
+* Geração de tabelas
+ Datatables
+
+* Geração de slides com Divs
+ Slick 
+
+* Mapas Interativos
+ Google Maps: API
+ Leaflet
+ 
+ 
+* Chat
+??
+
+* Diversas Coisas para Front-End
+	http://keenthemes.com/preview/metronic/theme/admin_1/charts_amcharts.html
+
+
+Um bom programador é alguém que sempre olha para ambos os lados antes de atravessar uma rua unidirecional. ~ Doug Linder

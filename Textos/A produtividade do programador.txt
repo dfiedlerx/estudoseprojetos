@@ -1,0 +1,50 @@
+Dicas de produtividade para programadores e DBAs.
+
+
+1 - Seja Organizado
+
+ Utilizar ótimas soluços para organização e gerenciamento de artefatos relacionados à software )código fonte, diagramas, especificação, imagens, ícones, etc), tais como Git Hub, VVS, Team Foundation Server e putras.
+ Recomenda-se que algum tipo de SCM (Software Change Manangement) seja utilizado mesmo que apenas uma pessoa seja responsável por trabalhar com artefatos de software.
+
+
+
+2 - Escolha uma ferramenta de SQL adequada
+
+ Atualmente, os fornecedores de banco de dados provém de diversas ferramentas para se trabalhar com a linguagem SL do produto que comercializam. Contudo, existem outras ferramentas de terceiros que são bem interessantes quando é necessário manipular instruções SQL em uma interface gráfica. Com certeza, estas ferramentas possuem recursos muito valiosos que vão além dos simples comandos e scrpts voltados para editores de texto avançados. Ex: Toado for Data Analysis, Embarcadero's Rapid SQL XE, SwissSQL Console, FlySpeed SQL Query, RazorSQL.
+
+OO fato das opções acima serem focadas apenas no SQL lhes fornece uma vantagem em relação a editores de texto de proósito múltiplo, como o Visual Studio >NET, Eclipse ou Netbeans. Porém, a produtividade realmente só pode ser obtida se cultiva o hábito de empregar no dia a dia recursos avamçados para otimizar a execução de tarefas.
+
+
+3 - Formate suas intruções SQL
+
+ É comum um DBA ou programador se deparar com uma instrição SQL gigantesca e imcompreensível obtida a partir de um log ou mesmo coletada de um código fonte. Para facilitar a formatação visual (e tambpem o entendimento), recomendo um ótimo formatador online de instruções SQL chamado Online SQL Formater. Copiar, colar e formatar uma compreensão, economizando valiosos esforços mentas necessários para tal tarefa.
+
+
+4 - Use o Intellisense
+
+ O recurso de sugestão de palavras, sintaxes e texto em geral é uma das características que está se tornando cada vez mais comum em qualquer lugar onde é necessário digitação. Atualmente, este recurso não é exclusivo de aplicativos móveis ou IDEs como o Visual Studio.NET ou o Ecclipse. Ele pode ser colocado em qualquer caixa de texto ou editor. Uma ótima ferramenta que faz isso se chama Typing Assistant, que pode simplificar muito a digitação e entrada manial de dados frequentes em qualquer aplicação.
+
+
+5 - USer atalhos e snipeets
+
+ A utilização de atalahos, não só os do dekstop do sistema operacional, snippets e templates (partes de código previamente criadas coom lacunas a serem preenchidas), facilida e ajuda muito o desenvolvedor que precisa lidar com instruçoes, trechos, blocos e partes de código fonte e instruções SQL. Geralmente os IDEs j´´a possuem um bom suporte para estes recursos, mas destaco dois links com informações sobre estes recursos no Mangement Studio - a ferramenta principal de implementação e administração do SQL Server.
+
+
+6 - Use e abuse do Hardware
+
+ O mercado está cheio de soluções de hardware que podem impulsionar a produtividade de um professional. Aqui destaco os meus dois preferidos: o uso de mais de um monitor (que requer uma placa de vídeo que suporte tal tarefa) e o uso de mouses especiais com botões. Estes recursos são extremamente interessantes e dependendo da situação podem auxiliar drasticamente no tempo de reduçãp das tarefas. Por exemplo, o mouse voltado para gamers profissionais chamado Razer Naga possui doze botôes laterias, posicionados perto do polegar que podem ser customizados.
+
+ Imaginem que nestes botões seja possível configurar a tecla Del, Page Up, Page Down e combinações como CTRL+C, CTRL+V e outras. Este tipo de recurso facilida muito e trabalha diretmente com código fonte e instruções SQL. Já para se trabalhar com mais de um monitor.
+
+
+7 - Tenha à mão um guia de consulta rápida
+
+ Guias de documentação são pequenos livros com o resumo de instruções, sintaxe e conceitos prontos para serem rapidamente revisados. Com certeza eles não substituem a documentação oficial, mas podem gerar ganhos de produtividade até que se acostume com os principais comandos, funções, estruturas, classes, método e outros de determinada tecnologia. O exemplo clássico envolve os guias produzidos pela editora Novatec, que já são bem conhecidos no mercado. 
+
+
+8 - Não se perca com senhas e mais senhas
+
+ Trabalhjar com programação e administraçãp vai requerer o armazenamento de senhas e logins de acesso pessoais a diverções serviços, sites, plataformas, rede sociais, etc. Como este tipo de informação é sensívelrecomenda-se utilizar uma ferramenta apenas para isso. Um exemplo é o Keepass Password safe que com certeza economiza alguns preciosos minutps quando não lembramos aquela senha ou login necessários para a autenticação em um local.
+
+
+9 - 
